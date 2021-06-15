@@ -1,0 +1,94 @@
+:root{  /* custom propieties, valores globales*/
+    --primario: #00a9f0;
+    --blanco: #fff;
+    --negro: #000;
+    --gris: #dff0ff;
+    --gris2: #cce5ff;
+    --grisclaro: #dfe9f3;
+
+    --fuenteprincipal: 'Staatliches', cursive; /*si quiero cambiar la fuente de la web, la cambio directamente acá*/
+} /*VALORES PRINCIPALES*/
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%);
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  } /*BOX SIZING DE PAUL IRISH*/
+
+  /*HEADER*/
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+/*FUENTES*/
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+/*NAVEGACIÓN*/
+
+.navegacion{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: var(--primario);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0REM 20rem;
+}
+.navegacion__enlace{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.75rem;
+    color: var(--blanco);
+}
+
+.navegacion__enlace:hover{
+    background-color: var(--gris2);
+    color: #000;
+    border-radius: 0.5rem;
+}
+
+.contenedor{
+    background-image: url(../Img/fondoHidrovia.jpg) ;
+    background-repeat: no-repeat;
+    height: 480px;
+    position:relative;
+    background-size: cover;
+}
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(130,130,130,0.49); /*para versiones viejas de chrome*/
+    -moz-box-shadow: 0px 5px 15px 0px rgba(130,130,130,0.49); /*para versiones viejas de mozilla*/
+    box-shadow: 0px 5px 15px 0px rgba(130,130,130,0.49); /*para el sombreado con este es suficiente*/
+    background-color: var(--blanco);
+    padding: 0;
+    border-radius: 1rem ;
+    margin: 2rem;
+}
+
+.contenedor__div{
+    position: absolute;
+    background-color: rgba(255,255,255,0.6);
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
